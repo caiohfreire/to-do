@@ -1,0 +1,71 @@
+.menu-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 365px;
+  width: 100%;
+  height: calc(100vh - 10rem);
+  margin-top: 56px;
+  padding: 1rem;
+  background-color: #3ABEFF;
+  color: #FFF;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 4px 8px #0000002f;
+
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .image-profile {
+      width: 86px;
+      height: 86px;
+      border-radius: 100px;
+      margin-top: -64px;
+      margin-bottom: 1rem;
+    }
+
+    .name {
+      font-weight: 600;
+    }
+
+    .email {
+      font-size: 14px;
+    }
+  }
+
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    padding: 2rem 0rem;
+    list-style: none;
+
+    .list {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 0.685rem;
+      gap: 1rem;
+      border-radius: 14px;
+      background-color: #FFF;
+      color: #3ABEFF;
+      font-weight: 600;
+      box-shadow: 0 4px 12px #00000021;
+      cursor: pointer;
+    }
+  }
+
+  .exit {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.685rem;
+    gap: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}

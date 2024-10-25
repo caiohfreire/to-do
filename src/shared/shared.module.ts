@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { LockKeyhole, LucideAngularModule, User } from 'lucide-angular';
+import { Activity, Bell, CalendarDays, Cog, LayoutDashboard, LayoutList, LifeBuoy, LockKeyhole, LogOut, LucideAngularModule, Search, SquareCheckBig, User } from 'lucide-angular';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
@@ -7,7 +7,17 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     LucideAngularModule.pick({
       User,
-      LockKeyhole
+      LockKeyhole,
+      Bell,
+      CalendarDays,
+      Search,
+      LayoutDashboard,
+      Activity,
+      SquareCheckBig,
+      LayoutList,
+      Cog,
+      LifeBuoy,
+      LogOut,
     })
   ],
   exports: [
