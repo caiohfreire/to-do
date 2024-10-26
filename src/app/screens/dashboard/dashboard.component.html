@@ -1,5 +1,70 @@
 <app-header></app-header>
 <app-menu></app-menu>
-<div>
 
+<div class="template">
+  <div class="welcome">
+    <h2>Welcome back, Caio 👋</h2>
+    <div class="invite">
+      <span class="invite-image">
+        <img
+          src="https://github.com/caiohfreire.png"
+          alt="members picture">
+      </span>
+      <button class="invite-button">
+        <lucide-icon
+          name="user-plus"
+          color="#3ABEFF"
+          size="20px"
+          class="remove-lh"></lucide-icon>
+        Invite
+      </button>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="content">
+      <div class="session">
+        <div class="session-header flex-column gap-sm">
+          <div class="flex-between">
+            <div class="session-name">
+              <lucide-icon
+                name="chart-no-axes-gantt"
+                size="20px"
+                color="#A1A3AB"
+                class="remove-lh"></lucide-icon>
+              <p>To-Do</p>
+            </div>
+            <div class="session-add">
+              <lucide-icon
+                name="plus"
+                size="18px"
+                color="#3ABEFF"
+                class="remove-lh"></lucide-icon>
+              <p>Add task</p>
+            </div>
+          </div>
+          <div class="task-date">
+            <span>20 June</span>
+            <div class="day">
+              <lucide-icon
+                name="dot"
+                size="16px"
+                color="#A1A3AB"
+                class="remove-lh"
+              />
+              <span>Today</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-column gap-md">
+        <div class="session-half">
+          <p>Status</p>
+        </div>
+        <div class="session">
+          <p>Completed</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

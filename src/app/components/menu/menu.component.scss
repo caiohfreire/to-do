@@ -1,17 +1,19 @@
 .menu-container {
   position: fixed;
+  top: 180px;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-width: 365px;
   width: 100%;
-  height: calc(100vh - 10rem);
-  margin-top: 56px;
+  height: calc(100vh - 180px);
   padding: 1rem;
   background-color: #3ABEFF;
   color: #FFF;
   border-radius: 0 8px 8px 0;
   box-shadow: 0 4px 8px #0000002f;
+  z-index: 1000;
 
   .personal-info {
     display: flex;
@@ -36,6 +38,7 @@
     }
   }
 
+
   .menu-items {
     display: flex;
     flex-direction: column;
@@ -44,6 +47,12 @@
     padding: 2rem 0rem;
     list-style: none;
 
+    .list.active {
+      font-weight: bold;
+      color: #3ABEFF;
+      background-color: #FFF;
+    }
+
     .list {
       display: flex;
       align-items: center;
@@ -51,10 +60,9 @@
       padding: 0.685rem;
       gap: 1rem;
       border-radius: 14px;
-      background-color: #FFF;
-      color: #3ABEFF;
+      background-color: transparent;
+      color: #FFF;
       font-weight: 600;
-      box-shadow: 0 4px 12px #00000021;
       cursor: pointer;
     }
   }
@@ -66,6 +74,7 @@
     padding: 0.685rem;
     gap: 1rem;
     font-weight: 500;
+    margin-top: -100px;
     cursor: pointer;
   }
 }

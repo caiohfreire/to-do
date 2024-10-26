@@ -9,7 +9,62 @@
   font-style: normal;
 }
 
+body {
+  background: #F5F8FF;
+}
+
 // remove line height
 .remove-lh {
   line-height: 0;
+}
+
+// template default
+.template {
+  position: absolute;
+  top: 180px;
+  right: 32px;
+  bottom: 32px;
+  left: 397px;
+  padding: 1rem;
+  color: #000;
+  min-height: calc(100vh - 212px);
+}
+
+// containers wrapper
+.session {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: #F5F8FF;
+  border-radius: 14px;
+  box-shadow: 0 4px 34px #00000010;
+}
+
+.session-half {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  height: 50%;
+  background-color: #F5F8FF;
+  border-radius: 14px;
+  box-shadow: 0 4px 34px #00000010;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-sm {
+  gap: 6px;
+}
+.gap-md {
+  gap: 16px;
 }

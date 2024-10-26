@@ -13,55 +13,55 @@
 
     <div>
       <ul class="menu-items">
-        <li class="list">
+        <li class="list" routerLink="['/dashboard']" routerLinkActive="active" [ngClass]="{'active': isActive('/dashboard')}">
           <lucide-icon
             name="layout-dashboard"
-            color="#3ABEFF"
+            [color]="isActive('/dashboard') ? '#3ABEFF' : '#FFF'"
             size="28px"
             class="remove-lh"
           />
           Dashboard
         </li>
-        <li class="list">
+        <li class="list" routerLink="/vital-task" routerLinkActive="active">
           <lucide-icon
             name="activity"
-            color="#3ABEFF"
+            [color]="isActive('/vital-task') ? '#3ABEFF' : '#FFF'"
             size="28px"
             class="remove-lh"
           />
           Vital Task
         </li>
-        <li class="list">
+        <li class="list" routerLink="/my-task" routerLinkActive="active">
           <lucide-icon
             name="square-check-big"
-            color="#3ABEFF"
+            [color]="isActive('/my-task') ? '#3ABEFF' : '#FFF'"
             size="28px"
             class="remove-lh"
           />
           My Task
         </li>
-        <li class="list">
+        <li class="list" routerLink="/task-categories" routerLinkActive="active">
           <lucide-icon
             name="layout-list"
-            color="#3ABEFF"
+            [color]="isActive('/task-categories') ? '#3ABEFF' : '#FFF'"
             size="28px"
             class="remove-lh"
           />
           Task Categories
         </li>
-        <li class="list">
+        <li class="list" routerLink="/settings" routerLinkActive="active">
           <lucide-icon
             name="cog"
-            color="#3ABEFF"
+            [color]="isActive('/settings') ? '#3ABEFF' : '#FFF'"
             size="28px"
             class="remove-lh"
           />
           Settings
         </li>
-        <li class="list">
+        <li class="list" routerLink="/help" routerLinkActive="active">
           <lucide-icon
             name="life-buoy"
-            color="#3ABEFF"
+            [color]="isActive('/help') ? '#3ABEFF' : '#FFF'"
             size="28px"
             class="remove-lh"
           />
@@ -69,7 +69,6 @@
         </li>
       </ul>
     </div>
-
   </div>
   <span class="exit">
     <lucide-icon

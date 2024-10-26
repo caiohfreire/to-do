@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Activity, Bell, CalendarDays, Cog, LayoutDashboard, LayoutList, LifeBuoy, LockKeyhole, LogOut, LucideAngularModule, Search, SquareCheckBig, User } from 'lucide-angular';
+import { Activity, Bell, CalendarDays, ChartColumn, ChartNoAxesGantt, Check, Cog, Dot, LayoutDashboard, LayoutList, LifeBuoy, LockKeyhole, LogOut, LucideAngularModule, Plus, Search, SquareCheckBig, User, UserPlus } from 'lucide-angular';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
@@ -18,6 +18,12 @@ import { CommonModule } from '@angular/common';
       Cog,
       LifeBuoy,
       LogOut,
+      UserPlus,
+      ChartColumn,
+      ChartNoAxesGantt,
+      Check,
+      Plus,
+      Dot,
     })
   ],
   exports: [
