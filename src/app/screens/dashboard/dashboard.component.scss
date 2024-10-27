@@ -92,4 +92,16 @@
     }
   }
 
+  .task {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .divider {
+    display: block;
+    margin: 6px 0;
+    border: 1px solid #A1A3AB41;
+    border-radius: 100px;
+  }
+
 }

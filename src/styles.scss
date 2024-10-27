@@ -21,10 +21,10 @@ body {
 // template default
 .template {
   position: absolute;
-  top: 180px;
+  top: 160px;
   right: 32px;
   bottom: 32px;
-  left: 397px;
+  left: 350px;
   padding: 1rem;
   color: #000;
   min-height: calc(100vh - 212px);
@@ -39,6 +39,7 @@ body {
   background-color: #F5F8FF;
   border-radius: 14px;
   box-shadow: 0 4px 34px #00000010;
+  overflow: auto;
 }
 
 .session-half {
