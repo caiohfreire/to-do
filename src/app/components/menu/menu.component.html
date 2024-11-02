@@ -13,7 +13,7 @@
 
     <div>
       <ul class="menu-items">
-        <li class="list" routerLink="['/dashboard']" routerLinkActive="active" [ngClass]="{'active': isActive('/dashboard')}">
+        <li class="list" routerLink="/dashboard" routerLinkActive="active" [ngClass]="{'active': isActive('/dashboard')}">
           <lucide-icon
             name="layout-dashboard"
             [color]="isActive('/dashboard') ? '#3ABEFF' : '#FFF'"
@@ -22,7 +22,7 @@
           />
           Dashboard
         </li>
-        <li class="list" routerLink="/vital-task" routerLinkActive="active">
+        <li class="list" routerLink="/vital-task" routerLinkActive="active" [ngClass]="{'active': isActive('/vital-task')}">
           <lucide-icon
             name="activity"
             [color]="isActive('/vital-task') ? '#3ABEFF' : '#FFF'"
@@ -31,16 +31,16 @@
           />
           Vital Task
         </li>
-        <li class="list" routerLink="/my-task" routerLinkActive="active">
+        <li class="list" routerLink="/my-tasks" routerLinkActive="active" [ngClass]="{'active': isActive('/my-tasks')}">
           <lucide-icon
             name="square-check-big"
-            [color]="isActive('/my-task') ? '#3ABEFF' : '#FFF'"
+            [color]="isActive('/my-tasks') ? '#3ABEFF' : '#FFF'"
             size="28px"
             class="remove-lh"
           />
           My Task
         </li>
-        <li class="list" routerLink="/task-categories" routerLinkActive="active">
+        <li class="list" routerLink="/task-categories" routerLinkActive="active" [ngClass]="{'active': isActive('/task-categories')}">
           <lucide-icon
             name="layout-list"
             [color]="isActive('/task-categories') ? '#3ABEFF' : '#FFF'"
@@ -49,7 +49,7 @@
           />
           Task Categories
         </li>
-        <li class="list" routerLink="/settings" routerLinkActive="active">
+        <li class="list" routerLink="/settings" routerLinkActive="active" [ngClass]="{'active': isActive('/settings')}">
           <lucide-icon
             name="cog"
             [color]="isActive('/settings') ? '#3ABEFF' : '#FFF'"
@@ -58,7 +58,7 @@
           />
           Settings
         </li>
-        <li class="list" routerLink="/help" routerLinkActive="active">
+        <li class="list" routerLink="/help" routerLinkActive="active" [ngClass]="{'active': isActive('/help')}">
           <lucide-icon
             name="life-buoy"
             [color]="isActive('/help') ? '#3ABEFF' : '#FFF'"

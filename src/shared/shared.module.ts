@@ -4,9 +4,14 @@ import { CommonModule } from '@angular/common';
 import { CheckboxModule } from 'primeng/checkbox';
 import { FormsModule } from '@angular/forms';
 
+import { HeaderComponent } from '../app/components/header/header.component';
+import { MenuComponent } from '..//app/components/menu/menu.component';
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   imports: [
     CommonModule,
+    RouterModule,
     FormsModule,
     CheckboxModule,
     LucideAngularModule.pick({
@@ -30,7 +35,13 @@ import { FormsModule } from '@angular/forms';
       Dot,
     })
   ],
+  declarations: [
+    HeaderComponent,
+    MenuComponent,
+  ],
   exports: [
+    HeaderComponent,
+    MenuComponent,
     LucideAngularModule,
     FormsModule,
     CheckboxModule,

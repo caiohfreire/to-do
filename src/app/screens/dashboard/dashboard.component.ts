@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Color, ScaleType, ViewDimensions } from '@swimlane/ngx-charts';
+import { Color, ScaleType } from '@swimlane/ngx-charts';
 
 @Component({
   selector: 'app-dashboard',
