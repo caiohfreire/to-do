@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Activity, Bell, CalendarDays, ChartColumn, ChartNoAxesGantt, Check, Cog, Dot, LayoutDashboard, LayoutList, LifeBuoy, LockKeyhole, LogOut, LucideAngularModule, Plus, Search, SquareCheckBig, User, UserPlus } from 'lucide-angular';
-import { CheckboxModule } from 'primeng/checkbox';
+import { Activity, Bell, CalendarDays, ChartColumn, ChartNoAxesGantt, Check, Cog, Dot, LayoutDashboard, LayoutList, LifeBuoy, LockKeyhole, LogOut, LucideAngularModule, Plus, Search, SquareCheckBig, StickyNote, Trash2, User, UserPlus } from 'lucide-angular';
 
 import { HeaderComponent } from '../app/components/header/header.component';
 import { MenuComponent } from '..//app/components/menu/menu.component';
@@ -14,7 +13,6 @@ import { CardTaskComponent } from 'src/app/components/card-task/card-task.compon
     CommonModule,
     RouterModule,
     FormsModule,
-    CheckboxModule,
     LucideAngularModule.pick({
       User,
       LockKeyhole,
@@ -34,6 +32,8 @@ import { CardTaskComponent } from 'src/app/components/card-task/card-task.compon
       Check,
       Plus,
       Dot,
+      Trash2,
+      StickyNote
     })
   ],
   declarations: [
@@ -47,7 +47,6 @@ import { CardTaskComponent } from 'src/app/components/card-task/card-task.compon
     CardTaskComponent,
     LucideAngularModule,
     FormsModule,
-    CheckboxModule,
   ]
 })
 export class SharedModule { }
