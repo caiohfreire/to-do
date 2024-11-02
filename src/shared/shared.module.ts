@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
-import { Activity, Bell, CalendarDays, ChartColumn, ChartNoAxesGantt, Check, Cog, Dot, LayoutDashboard, LayoutList, LifeBuoy, LockKeyhole, LogOut, LucideAngularModule, Plus, Search, SquareCheckBig, User, UserPlus } from 'lucide-angular';
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { CheckboxModule } from 'primeng/checkbox';
 import { FormsModule } from '@angular/forms';
+import { Activity, Bell, CalendarDays, ChartColumn, ChartNoAxesGantt, Check, Cog, Dot, LayoutDashboard, LayoutList, LifeBuoy, LockKeyhole, LogOut, LucideAngularModule, Plus, Search, SquareCheckBig, User, UserPlus } from 'lucide-angular';
+import { CheckboxModule } from 'primeng/checkbox';
 
 import { HeaderComponent } from '../app/components/header/header.component';
 import { MenuComponent } from '..//app/components/menu/menu.component';
-import { RouterModule } from '@angular/router';
+import { CardTaskComponent } from 'src/app/components/card-task/card-task.component';
 
 @NgModule({
   imports: [
@@ -38,10 +39,12 @@ import { RouterModule } from '@angular/router';
   declarations: [
     HeaderComponent,
     MenuComponent,
+    CardTaskComponent,
   ],
   exports: [
     HeaderComponent,
     MenuComponent,
+    CardTaskComponent,
     LucideAngularModule,
     FormsModule,
     CheckboxModule,

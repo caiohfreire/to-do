@@ -4,7 +4,6 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { SharedModule } from 'src/shared/shared.module';
 import { DashboardComponent } from './dashboard.component';
-import { CardTaskComponent } from 'src/app/components/card-task/card-task.component';
 
 @NgModule({
   imports: [
@@ -14,7 +13,6 @@ import { CardTaskComponent } from 'src/app/components/card-task/card-task.compon
   ],
   declarations: [
     DashboardComponent,
-    CardTaskComponent,
   ]
 })
 export class DashboardModule { }
