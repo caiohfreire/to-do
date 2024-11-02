@@ -13,6 +13,8 @@ export class CardTaskComponent {
   @Input() status!: string;
   @Input() createdOn!: string;
 
+  checked: boolean = false;
+
   constructor() { }
 
 }

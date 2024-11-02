@@ -23,7 +23,7 @@ export class DashboardComponent {
     },
   ];
 
-  view: [number, number] = [490, 200];
+  view: [number, number] = [490, 180];
 
   colorScheme: Color = {
     domain: ['#F21E1E', '#0225FF', '#05A301'],
