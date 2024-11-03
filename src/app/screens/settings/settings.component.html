@@ -5,7 +5,7 @@
   <div class="session shadow">
     <div class="section">
       <h4 class="header">Account Information</h4>
-      <button>Go back</button>
+      <button routerLink="/dashboard" routerLinkActive="active">Go back</button>
     </div>
 
     <div class="user-info">
@@ -63,10 +63,11 @@
 
       <div class="form-actions">
         <button>Update Info</button>
-        <button>Change Password</button>
+        <button routerLink="/settings/change-password" routerLinkActive="active">
+          Change Password
+        </button>
       </div>
    </div>
-
-
   </div>
 </div>
+<router-outlet></router-outlet>

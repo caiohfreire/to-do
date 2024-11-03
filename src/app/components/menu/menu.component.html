@@ -52,7 +52,7 @@
         <li class="list" routerLink="/settings" routerLinkActive="active" [ngClass]="{'active': isActive('/settings')}">
           <lucide-icon
             name="cog"
-            [color]="isActive('/settings') ? '#3ABEFF' : '#FFF'"
+            [color]="isActive('/settings') || isActive('/settings/change-password') ? '#3ABEFF' : '#FFF'"
             size="28px"
             class="remove-lh"
           />
