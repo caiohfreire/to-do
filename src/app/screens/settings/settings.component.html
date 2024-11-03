@@ -1,0 +1,72 @@
+<app-header />
+<app-menu />
+
+<div class="template">
+  <div class="session shadow">
+    <div class="section">
+      <h4 class="header">Account Information</h4>
+      <button>Go back</button>
+    </div>
+
+    <div class="user-info">
+      <img
+        src="https://github.com/caiohfreire.png"
+        alt="user picture profile"
+      />
+      <div class="personal-info">
+        <span class="name">Caio Freire</span>
+        <span class="email">caio.freire&#64;icloud.com</span>
+      </div>
+    </div>
+
+    <div class="form">
+      <div class="form-input">
+        <label for="firstName">First Name</label>
+        <input
+          pInputText
+          class="input"
+          id="firstName"
+          aria-describedby="firstName-help"
+          [(ngModel)]="name"
+        />
+      </div>
+      <div class="form-input">
+        <label for="lastName">Last Name</label>
+        <input
+          pInputText
+          class="input"
+          id="lastName"
+          aria-describedby="lastName-help"
+          [(ngModel)]="lastName"
+        />
+      </div>
+      <div class="form-input">
+        <label for="email">Email Address</label>
+        <input
+          pInputText
+          class="input"
+          id="email"
+          aria-describedby="email-help"
+          [(ngModel)]="email"
+        />
+      </div>
+      <div class="form-input">
+        <label for="position">Position</label>
+        <input
+          pInputText
+          class="input"
+          id="position"
+          aria-describedby="position-help"
+          [(ngModel)]="position"
+        />
+      </div>
+
+      <div class="form-actions">
+        <button>Update Info</button>
+        <button>Change Password</button>
+      </div>
+   </div>
+
+
+  </div>
+</div>

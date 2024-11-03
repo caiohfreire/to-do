@@ -8,6 +8,7 @@ import { SignInModule } from './screens/sign-in/sign-in.module';
 import { SignupModule } from './screens/sign-up/signup.module';
 import { DashboardModule } from './screens/dashboard/dashboard.module';
 import { VitalTaskModule } from './screens/vital-task/vital-task.module';
+import { SettingsModule } from './screens/settings/settings.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { VitalTaskModule } from './screens/vital-task/vital-task.module';
     SignupModule,
     DashboardModule,
     VitalTaskModule,
+    SettingsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

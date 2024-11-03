@@ -1,0 +1,91 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .header {
+    font-size: 24px;
+
+    &::after {
+      width: 70%;
+    }
+  }
+
+  button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 1px solid #A1A3AB63;
+    box-shadow: 0 4px 14px #00000010;
+  }
+
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+
+    .name {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .email {
+      font-size: 14px;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 1rem;
+  border: 1px solid #A1A3AB63;
+  border-radius: 14px;
+  height: 65%;
+
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 50%;
+
+    label {
+      font-size: 12px;
+    }
+
+    .input {
+      padding: 6px;
+    }
+  }
+
+  .form-actions {
+    display: flex;
+    align-items: end;
+    padding: 16px 0;
+    gap: 16px;
+
+    button {
+      height: fit-content;
+      padding: 8px 24px;
+      border-radius: 6px;
+      background-color: #3ABEFF;
+      color: #FFF;
+      border: 0;
+      box-shadow: 0 4px 1px #00000010;
+      cursor: pointer;
+    }
+  }
+}

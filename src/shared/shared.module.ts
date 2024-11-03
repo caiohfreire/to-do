@@ -3,6 +3,8 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Activity, Bell, CalendarDays, ChartColumn, ChartNoAxesGantt, Check, Cog, Dot, LayoutDashboard, LayoutList, LifeBuoy, LockKeyhole, LogOut, LucideAngularModule, Plus, Search, SquareCheckBig, StickyNote, Trash2, User, UserPlus } from 'lucide-angular';
+import { FloatLabelModule } from 'primeng/floatlabel';
+import { InputTextModule } from 'primeng/inputtext';
 
 import { HeaderComponent } from '../app/components/header/header.component';
 import { MenuComponent } from '..//app/components/menu/menu.component';
@@ -13,6 +15,8 @@ import { CardTaskComponent } from 'src/app/components/card-task/card-task.compon
     CommonModule,
     RouterModule,
     FormsModule,
+    FloatLabelModule,
+    InputTextModule,
     LucideAngularModule.pick({
       User,
       LockKeyhole,
@@ -45,6 +49,8 @@ import { CardTaskComponent } from 'src/app/components/card-task/card-task.compon
     HeaderComponent,
     MenuComponent,
     CardTaskComponent,
+    FloatLabelModule,
+    InputTextModule,
     LucideAngularModule,
     FormsModule,
   ]
