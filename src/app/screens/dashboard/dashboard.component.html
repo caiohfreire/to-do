@@ -1,5 +1,6 @@
 <app-header></app-header>
 <app-menu></app-menu>
+<app-invite></app-invite>
 
 <div class="template">
   <div class="welcome">
@@ -10,12 +11,13 @@
           src="https://github.com/caiohfreire.png"
           alt="members picture">
       </span>
-      <button class="invite-button">
+      <button class="invite-button" (click)="showInvites()">
         <lucide-icon
           name="user-plus"
           color="#3ABEFF"
           size="20px"
-          class="remove-lh"></lucide-icon>
+          class="remove-lh"
+        />
         Invite
       </button>
     </div>

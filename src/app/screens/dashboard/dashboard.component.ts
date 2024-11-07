@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { Color, ScaleType } from '@swimlane/ngx-charts';
+
+import { InviteComponent } from './components/invite/invite.component';
+import { DashboardModule } from './dashboard.module';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  styleUrls: ['./dashboard.component.scss'],
+  standalone: true,
+  imports: [DashboardModule]
 })
 export class DashboardComponent {
+  @ViewChild(InviteComponent) inviteDialog!: InviteComponent;
 
   single = [
     {
@@ -33,6 +39,10 @@ export class DashboardComponent {
   };
 
   constructor() { }
+
+  showInvites() {
+    this.inviteDialog.showDialog();
+  }
 
   onSelect(event: any) {
     console.log(event);

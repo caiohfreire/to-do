@@ -1,0 +1,154 @@
+.invite-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  height: 100%;
+  border: 1px solid #A1A3AB64;
+  border-radius: 6px;
+
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+
+    label {
+      font-size: 14px;
+    }
+
+    .input-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+
+      .input {
+        width: 100%;
+        padding: 8px;
+      }
+
+      button {
+        padding: 10px 32px;
+        border-radius: 6px;
+        background-color: #3ABEFF;
+        color: #FFF;
+        border: 0;
+        box-shadow: 0 4px 1px #00000010;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .member-title {
+    font-weight: 500;
+  }
+
+    .members-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      height: 100%;
+      padding: 8px 0;
+      overflow: auto;
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        padding: 12px 0;
+
+        >div {
+          display: flex;
+          gap: 8px;
+        }
+
+        img {
+          width: 45px;
+          height: 45px;
+          border-radius: 100px;
+        }
+
+        .member-info {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+
+          .member-name {
+            font-weight: 500;
+          }
+
+          .member-email {
+            font-size: 12px;
+          }
+      }
+
+      .member-action {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        background-color: transparent;
+        font-weight: 500;
+        border: 0;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+:host::ng-deep {
+  .p-dialog {
+    padding: 24px;
+    background-color: #fff;
+    max-width: 600px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .p-dialog-title {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #000;
+      font-weight: 500;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 40%;
+        height: 2px;
+        background-color: #3ABEFF;
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        border-radius: 100px;
+      }
+  }
+
+  .p-dialog-content {
+    margin-top: 32px;
+  }
+
+  .p-dropdown {
+    border: 0;
+    box-shadow: none;
+  }
+
+  .p-dropdown-items-wrapper {
+    border-radius: 6px;
+    box-shadow: 0 4px 6px #00000010;
+  }
+
+  .p-dropdown-items {
+    li {
+      display: flex;
+      padding: 4px 8px;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from 'src/shared/shared.module';
@@ -9,7 +10,6 @@ import { SignupModule } from './screens/sign-up/signup.module';
 import { DashboardModule } from './screens/dashboard/dashboard.module';
 import { VitalTaskModule } from './screens/vital-task/vital-task.module';
 import { SettingsModule } from './screens/settings/settings.module';
-import { ChangePasswordModule } from './screens/settings/change-password/change-password.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +17,7 @@ import { ChangePasswordModule } from './screens/settings/change-password/change-
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
     SignInModule,
