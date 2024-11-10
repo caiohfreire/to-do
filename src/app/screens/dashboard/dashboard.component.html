@@ -1,6 +1,7 @@
 <app-header></app-header>
 <app-menu></app-menu>
 <app-invite></app-invite>
+<app-task-dialog></app-task-dialog>
 
 <div class="template">
   <div class="welcome">
@@ -36,7 +37,7 @@
                 class="remove-lh"></lucide-icon>
               <p>To-Do</p>
             </div>
-            <div class="session-add">
+            <div class="session-add" (click)="showTaskDialog()">
               <lucide-icon
                 name="plus"
                 size="18px"

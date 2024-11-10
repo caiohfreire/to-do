@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "../node_modules/quill/dist/quill.core.css";
+@import "../node_modules/quill/dist/quill.snow.css";
+@import "primeicons/primeicons.css";
 
 :root, * {
   margin: 0;
@@ -97,4 +100,9 @@ body {
     left: 0;
     border-radius: 100px;
   }
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
 }

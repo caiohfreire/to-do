@@ -10,6 +10,8 @@ import { SignupModule } from './screens/sign-up/signup.module';
 import { DashboardModule } from './screens/dashboard/dashboard.module';
 import { VitalTaskModule } from './screens/vital-task/vital-task.module';
 import { SettingsModule } from './screens/settings/settings.module';
+import { MessageService } from 'primeng/api';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import { SettingsModule } from './screens/settings/settings.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     AppRoutingModule,
     SharedModule,
     SignInModule,
@@ -26,7 +29,9 @@ import { SettingsModule } from './screens/settings/settings.module';
     VitalTaskModule,
     SettingsModule,
   ],
-  providers: [],
+  providers: [
+    MessageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

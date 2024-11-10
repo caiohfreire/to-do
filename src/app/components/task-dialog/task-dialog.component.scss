@@ -1,0 +1,201 @@
+.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  height: 100%;
+  padding: 16px;
+  border: 1px solid #A1A3AB64;
+  border-radius: 14px;
+
+  label {
+    font-weight: 500;
+  }
+}
+
+.w-80 {
+  grid-column: span 5;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.priority-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  grid-column: 1 / -1;
+  width: 100%;
+  gap: 8px;
+
+  .priority-option {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  .check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    margin-left: 8px;
+
+    label {
+      font-size: 14px;
+      margin-left: 8px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: flex;
+      width: 8px;
+      height: 8px;
+      bottom: 6px;
+      left: -10px;
+      border-radius: 50%;
+    }
+  }
+
+  .check-extreme::before {
+    background-color: #FF605C;
+  }
+
+  .check-moderate::before {
+    background-color: #FFBD44;
+  }
+
+  .check-low::before {
+    background-color: #00CA4E;
+  }
+}
+
+.editor {
+  grid-column: span 5;
+}
+
+.upload {
+  grid-column: span 1;
+}
+
+:host::ng-deep {
+  .p-dialog {
+    padding: 24px;
+    background-color: #fff;
+    max-width: 850px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .p-dialog-title {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #000;
+      font-weight: 500;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 80%;
+        height: 2px;
+        background-color: #3ABEFF;
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        border-radius: 100px;
+      }
+  }
+
+  .p-dialog-content {
+    margin-top: 32px;
+  }
+
+  .check .p-checkbox .p-checkbox-box {
+    border-radius: 50%;
+  }
+
+  .checkbox-extreme .p-checkbox-box {
+    background-color: transparent !important;
+    border-color: #FF605C !important;
+  }
+
+  .checkbox-extreme .p-checkbox-box.p-highlight {
+    background-color: #FF605C !important;
+    border-color: #FF605C !important;
+  }
+
+  .checkbox-moderate .p-checkbox-box {
+    background-color: transparent !important;
+    border-color: #FFBD44 !important;
+  }
+
+  .checkbox-moderate .p-checkbox-box.p-highlight {
+    background-color: #FFBD44 !important;
+    border-color: #FFBD44 !important;
+  }
+
+  .checkbox-low .p-checkbox-box {
+    background-color: transparent !important;
+    border-color: #00CA4E !important;
+  }
+
+  .checkbox-low .p-checkbox-box.p-highlight {
+    background-color: #00CA4E !important;
+    border-color: #00CA4E !important;
+  }
+
+  .p-button.p-button-icon-only.p-button-rounded {
+    width: 24px;
+    height: 24px;
+  }
+
+  .p-uploadfile {
+    height: 100%;
+    overflow: auto;
+  }
+
+  .p-fileupload-buttonbar {
+    padding: 6px;
+  }
+
+  .flex .gap-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .p-fileupload-empty .ng-star-inserted {
+    min-height: 31.5vh;
+  }
+
+  .ng-star-inserted {
+    h5 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 0;
+    }
+  }
+
+  .flex-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .p-fileupload-content {
+    min-height: 31.5vh;
+  }
+}
